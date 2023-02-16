@@ -1,0 +1,48 @@
+.questionImgTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 3vw;
+  margin-bottom: 20px;
+  padding: 2rem 4rem;
+  background-color: #f7f5eb;
+  border: 7px solid #65789a;
+  border-radius: 20px;
+  font-family: "Jua";
+  letter-spacing: 1.5px;
+}
+.questionImg {
+  width: 30%;
+  margin-top: 50px;
+}
+.question {
+  text-align: center;
+  font-size: 2vw;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  background-color: #f7f5eb;
+  border: 7px solid #65789a;
+  border-radius: 20px;
+  font-family: "Jua";
+  letter-spacing: 1.5px;
+}
+
+/* 태블릿 */
+@media (max-width: 768px) {
+  .question {
+    width: 80vw;
+    font-size: 4vw;
+    padding: 1rem;
+    border: 5px solid #65789a;
+  }
+  .questionImgTitle {
+    font-size: 3vw;
+    padding: 8px 10px;
+    border: 4px solid #65789a;
+    margin-bottom: 10px;
+  }
+  .questionImg {
+    margin: 0;
+  }
+}

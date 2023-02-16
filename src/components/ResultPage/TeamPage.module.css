@@ -1,0 +1,108 @@
+.teamDiv {
+  display: flex;
+  background-color: antiquewhite;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  width: 33vw;
+  height: 50%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.introDiv {
+  position: absolute;
+  border-radius: 10px;
+  width: 25vw;
+  background-color: aliceblue;
+  padding: 10px;
+  margin: 0 auto;
+}
+.teamImg {
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.teamName {
+  background-color: rgb(40, 141, 129);
+  color: whitesmoke;
+  font-family: "Jua";
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  width: 35%;
+  margin: 10px auto;
+  padding: 5px 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.socialImg {
+  width: 30px;
+  margin: 2px 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .teamDiv {
+    flex-direction: column;
+  }
+  .container {
+    height: 70vh;
+    position: relative;
+  }
+  .introDiv {
+    position: absolute;
+    border-radius: 10px;
+    width: 60vw;
+    height: 38vh;
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .introDiv > div:nth-child(3) {
+    text-align: right;
+    margin-right: 15px;
+    margin-top: -13%;
+  }
+  .container:nth-child(2) .introDiv {
+    height: 45vh;
+  }
+  .container:nth-child(3) .introDiv {
+    height: 39vh;
+  }
+  .teamImg {
+    padding-bottom: 40px;
+  }
+
+  .teamDiv {
+    height: 100%;
+  }
+  .teamName {
+    position: absolute;
+    width: 20vw;
+    border-radius: 8px;
+    font-size: 1rem;
+    justify-content: space-around;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    margin-top: -40px;
+    margin-left: 20px;
+    width: 80px;
+    height: 30px;
+  }
+  .socialImg {
+    justify-content: end;
+    width: 20px;
+    margin: 2px 5px;
+  }
+}

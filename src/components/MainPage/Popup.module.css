@@ -1,0 +1,125 @@
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.659);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popupContent {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 191, 101, 0.792);
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+.content {
+  margin: 20px;
+  font-family: "NEXON Lv2 Gothic";
+}
+.popupContent .startBtn button {
+  height: 40px;
+  margin: 15px auto;
+  padding: 5px 40px;
+  background: #ffaa40;
+  font-family: "NexonMaplestory";
+  font-size: 1.25rem;
+  color: #fff;
+  text-shadow: 2px 2px 3px rgb(172, 86, 0);
+  box-shadow: 0px 5px 0px 0px #a66615;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+.popupContent .startBtn button:hover {
+  margin-top: 10px;
+  margin-bottom: 3px;
+  box-shadow: 0px 0px 0px 0px #a66615;
+  cursor: pointer;
+}
+
+/* 테스트 하러가기 버튼 - popup open */
+.popupBtn {
+  text-decoration: none;
+  width: 15vw;
+  height: 5vh;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+.popupBtn button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  z-index: 1;
+  padding: 7px 20px;
+  background: transparent;
+  background-color: #89d8d3;
+  background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+  font-family: "NexonMaplestory";
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 2px 2px 2px rgba(49, 49, 49, 0.482);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.6),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.3), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.popupBtn button:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background-color: #4dccc6;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+  box-shadow: -2px -2px 20px 0px rgba(255, 255, 255, 0.523),
+    -2px -2px 10px 0px rgba(255, 255, 255, 0.523), 7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.popupBtn button:hover {
+  color: #fff;
+}
+.popupBtn button:hover:after {
+  top: 0;
+  height: 100%;
+}
+.popupBtn button:active {
+  top: 2px;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .popupContent {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  .popupBtn {
+    width: 35vw;
+    height: 5vh;
+    font-size: 1rem;
+    justify-content: center;
+    bottom: 0;
+  }
+  .popupBtn button {
+    padding: 5px 8px;
+  }
+  .popupContent .startBtn button {
+    padding: 2px 10px;
+    font-size: 1rem;
+    box-shadow: none;
+  }
+  .popupContent .startBtn button:hover {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    box-shadow: none;
+    cursor: pointer;
+  }
+}

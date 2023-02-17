@@ -164,7 +164,7 @@ p {
   }
   @keyframes left-right {
     from {
-      transform: translateX(0);
+      transform: translateX(-5vw);
     }
     to {
       transform: translateX(20vw);

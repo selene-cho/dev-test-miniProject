@@ -211,11 +211,11 @@ section {
 
 @media (max-width: 768px) {
   .goMainBtnTop {
-    top: 3vh;
-    left: 1.8vh;
-    font-size: 0.5px;
+    top: 3.5vh;
+    left: 1.9vh;
+    font-size: 0.9rem;
     width: 4.5vh;
-    height: 4vh;
+    height: 3.5vh;
     text-align: center;
     line-height: 25px;
   }
@@ -260,7 +260,8 @@ section {
     padding: 0;
   }
   .questionBox:nth-child(4) img {
-    width: 60vw;
+    width: 55vw;
+    height: 35vh;
   }
   .questionBox:nth-child(4) .listsBox {
     padding: 0;

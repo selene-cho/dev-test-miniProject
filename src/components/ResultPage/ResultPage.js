@@ -67,7 +67,7 @@ const ResultPage = ({ frontResult, backResult, score }) => {
     >
       <div className={styles.Loading}>
         <img src={Spinner} />
-        <p>결과를 분석중 입니다.</p>
+        <p>결과 분석 중 입니다...</p>
       </div>
     </div>
   ) : (

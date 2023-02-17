@@ -7,7 +7,10 @@ function Main() {
     <div className={styles.mainBg}>
       <p className={styles.mainMusic}>음악 재생 중 🎶</p>
       <div className={styles.mainContents}>
-        <h1 className={styles.mainTitle}>개발 관심도 & 마인드 측정테스트</h1>
+        <div className={styles.mainTitle}>
+          <h1>Dev. Park</h1>
+          <h2>개발 관심도 측정 테스트</h2>
+        </div>
         <div className={styles.mainText}>
           <p>개발에 대해 한번이라도 관심을 가져본적이 있나요?</p>
           <p>개발자에 대해 얼마나, 어디까지 알고 있나요?</p>

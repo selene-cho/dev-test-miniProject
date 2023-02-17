@@ -22,12 +22,12 @@
   margin: 0 auto;
   padding: 6.25rem 0;
 }
-.mainTitle {
+.mainTitle h1,
+.mainTitle h2 {
   font-family: "NexonMaplestory";
   font-weight: bold;
   font-size: 3.125rem;
   text-shadow: 2px 2px 3px rgb(255, 255, 255);
-  padding-top: 50px;
 }
 .mainText {
   font-family: "NEXON Lv2 Gothic";
@@ -75,14 +75,19 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    padding: 4rem 0;
   }
   .mainTitle {
+    padding: 30px 0 70px 0;
+    margin: 10px 0;
+  }
+  .mainTitle h1,
+  .mainTitle h2 {
     font-size: 1.875rem;
-    padding: 50px 40px;
     width: 100vw;
     letter-spacing: 1px;
+    padding: 10px 0;
   }
+
   .mainText {
     font-size: 0.8rem;
     width: 80vw;
